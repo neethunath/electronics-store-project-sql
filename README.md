@@ -40,6 +40,7 @@ WHERE
     ram >= 16
 ORDER BY 
     ram, speed DESC;
+```
 The query retrieves PCs with 16 GB of RAM or more.
 The results are sorted first by ram in ascending order, then by speed in descending order.
 The selected columns are pc_code, model, speed, and ram to ensure the correct column order.
