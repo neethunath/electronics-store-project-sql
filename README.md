@@ -4,6 +4,16 @@
 As a customer of an electronics store, this project aims to utilize the store's interface to acquire information about the most functional and affordable devices that match specific requirements and preferences.
 This project is part of the **Databases with SQL and Python** course on the [Hyperskill platform](https://hyperskill.org).
 
+## Database Schema
+
+Below is a visual representation of the database structure used in this project. The schema consists of the Product, PC, Laptop, and Printer tables, each storing relevant data for the electronics store:
+
+![Database Structure](images/database-schema.png)
+
+- The **Product** table contains general information about all products, including printers, PCs, and laptops.
+- The **Product** table is in a **one-to-many** relationship with the **Printer**, **PC**, and **Laptop** tables: one product can have multiple related printers/PCs/laptops, but each printer/PC/laptop corresponds to exactly one product.
+- Each printer in the **Printer** table must have a corresponding entry in the **Product** table (mandatory), but not every product needs to be a printer (optional). The same holds true for the **PC** and **Laptop** tables.
+
 ## Database Explanation
 The project includes a Market database with several tables:
 
