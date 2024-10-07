@@ -8,7 +8,7 @@ This project is part of the **Databases with SQL and Python** course on the [Hyp
 
 Below is a visual representation of the database structure used in this project. The schema consists of the Product, PC, Laptop, and Printer tables, each storing relevant data for the electronics store:
 
-![Database Structure](images/database-schema.png)
+![Database Structure](database-schema.png)
 
 - The **Product** table contains general information about all products, including printers, PCs, and laptops.
 - The **Product** table is in a **one-to-many** relationship with the **Printer**, **PC**, and **Laptop** tables: one product can have multiple related printers/PCs/laptops, but each printer/PC/laptop corresponds to exactly one product.
